@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Title</title>
+		<!-- Moralis SDK code -->
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	
+	</head>
+	<body>
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Protecting B2B reputations through unbiased reviews</h1>
+			</div>
+		</div>
+
+		<div id="auth">
+			<div class="container">
+				<button id="btn-login">Sign in</button>
+			</div>
+			<div class="container">
+				<button id="btn-logout" style="display:none;">Log out</button>
+			</div>
+		</div>
+
+		<div>
+			<h3>reviews</h3>
+			<ul id="reviews">
+			  <li style="display: none;">
+				<p>title:Nespresso Boutique</p>
+				<p>datetime:10/25/2021</p>
+				<p>author:Mary L.</p>
+				<p>Another positive experience with purchasing pods through the boutique for both the Original and Vertuo machines. I've been a Nespresso Original line customer for years and have purchased Vertuo pods for friends / family.  I am 'old school' and prefer to shop in store / in person whenever possible. I've been Paul's customer for years; he has always provided consistent, professional, helpful and friendly customer service. He makes recommendations on different coffees that he thinks I would enjoy based upon my taste preferences.  Thanks again, Paul!</p>
+			  </li>
+			  <li style="display: none;">
+				<p>title:Nespresso Boutique</p>
+				<p>datetime:10/6/2020</p>
+				<p>author:Ruchika M.</p>
+				<p>Not the best cup of coffee I have had, but good. Nespresso always has a laudable, chic ambience. Definitely worth venturing to a boutique at least once and trying one of their crafted drinks.</p>
+			  </li>
+			  <li style="display:none;">
+				<p>title:Nespresso Boutique</p>
+				<p>datetime:10/29/2021</p>
+				<p>author:vtoni t.</p>
+				<p>Very bad service! And the manager was very useless to talked to about my complain.</p>
+			  </li>
+			</ul>
+		</div>
+		<div id="create-topic" style="display:none;">
+			<h1>create</h1>
+			<div>
+				<div>
+				<label>topic:</label>
+				<input type='text' />
+				</div>
+				<div>
+				<h3>fund</h3>
+				<div>
+					<label>amount:</label> eth
+					<input type='number' />
+				</div>
+				<div>
+					<button id="btn-fund">fund</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<script type="text/javascript" src="./main.js"></script>
+
+	</body>
+</html>
